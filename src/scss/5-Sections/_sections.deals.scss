@@ -1,0 +1,30 @@
+.s-deals {
+  padding: 50px 0;
+  position: relative;
+  background: rgb(199,110,26);
+  background: linear-gradient(126deg, rgba(199,110,26,1) 0%, rgba(255,195,27,1) 37%, rgba(255,195,27,1) 58%, rgba(199,110,26,1) 100%);
+
+  @include mq(768) {
+    padding: 60px 0 70px;
+  }
+
+  @include mq(1400) {
+    background-image: url('../../img/global/order-bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.s-deals__wrap {
+  text-align: center;
+  color: palette(grey-color, 50);
+  position: relative;
+}
+
+.s-deals__title {
+  margin-bottom: 40px;
+
+  @include mq(992) {
+    margin-bottom: 60px;
+  }
+}

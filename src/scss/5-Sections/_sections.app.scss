@@ -1,0 +1,93 @@
+.s-app {
+  background: #FEEFD0;
+  position: relative;
+  padding-top: 50px;
+
+  @include mq(992) {
+    padding-top: 80px;
+  }
+
+  @include mq(1200) {
+    padding-top: 100px;
+  }
+  
+  .custom-container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.s-app__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(92.84deg, #FF8A00 -47.72%, #FFB800 136.81%);
+  z-index: 1;
+  padding-bottom: 80px;
+}
+
+.s-app__features {
+  background: palette(grey-color, 50);
+  box-shadow: 0px 14px 15px rgba(255, 174, 0, 0.01), 0px 27px 82px rgba(255, 174, 0, 0.28);
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  @include mq(520) {
+    flex-direction: row;
+  }
+
+  @include mq(768) {
+    flex-direction: row;
+    margin-bottom: 80px;
+    border-radius: 46px;
+  }
+}
+
+.s-app__intro {
+  padding-top: 30px;
+
+  @include mq(1200) {
+    padding-top: 70px;
+  }
+}
+
+.s-app__intro-title {
+  @include font(lg, 52, 700);
+  background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+
+  @include mq(768) {
+    @include font(xl, 72, 700);
+  }
+}
+
+.s-app__intro-text {
+  @include font(base, 25, 400);
+  color: palette(grey-color, 550);
+}
+
+.s-app__btns {
+  margin-top: 40px;
+}
+
+.s-app__btn {
+  display: inline-block;
+  background-color: palette(grey-color, 50);
+  box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+  border-radius: 5px;
+  padding: 10px 15px;
+  height: 60px;
+  margin: 0 10px 20px 0;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:active {
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.46), 0px 20px 40px rgba(255, 174, 0, 0.49);
+  }
+}

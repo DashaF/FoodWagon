@@ -1,0 +1,62 @@
+/**
+ *  Global color variables.
+ *	The underscore Never use them directly in the styles, only for functions and mixins.
+ */
+
+ $_color-primary-500: #FFB30E !default;
+ $_color-primary-300: #FEEFD0 !default;
+ $_color-primary-100:#FEFAF1 !default;
+
+ $_color-secondary-500: #F17228 !default;  
+
+ $_color-success-500: #79B93C !default;
+
+ $_color-grey-950: #000000 !default;
+ $_color-grey-900: #212121 !default;
+ $_color-grey-850: #504F4F !default;
+ $_color-grey-800: #424242 !default;
+ $_color-grey-700: #616161 !default;
+ $_color-grey-600: #757575 !default;
+ $_color-grey-550: #827E7E !default;
+ $_color-grey-500: #9E9E9E !default;
+ $_color-grey-400: #BDBDBD !default;
+ $_color-grey-300: #E0E0E0 !default;
+ $_color-grey-200: #EEEEEE !default;
+ $_color-grey-150: #F5F5F5 !default;
+ $_color-grey-100: #FCFCFC !default;
+ $_color-grey-50: #FFFFFF !default;
+ /**
+  *  Organize color variables in a Sass Map.
+  *  This way, the colors can be iterated, are more organized, and are more intuitive to reference.
+  */
+ $palettes: (
+         'primary': (
+                 base: $_color-primary-500,
+                 300: $_color-primary-300,
+                 100: $_color-primary-100,
+         ),
+         'secondary': (
+                 base: $_color-secondary-500,
+         ),
+         'success': (
+                 base: $_color-success-500,
+         ),
+         'grey-color': (
+                 950: $_color-grey-950,
+                 900: $_color-grey-900,
+                 850: $_color-grey-850,
+                 800: $_color-grey-800,
+                 700: $_color-grey-700,
+                 600: $_color-grey-600,
+                 550: $_color-grey-550,
+                 base: $_color-grey-500,
+                 400: $_color-grey-400,
+                 300: $_color-grey-300,
+                 200: $_color-grey-200,
+                 150: $_color-grey-150,
+                 100: $_color-grey-100,
+                 50: $_color-grey-50,
+         ),
+ );
+
+ 

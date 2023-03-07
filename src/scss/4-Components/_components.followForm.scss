@@ -1,0 +1,39 @@
+.c-follow-form {
+  position: relative;
+  padding: 0 10px 0 50px;
+  background: palette(grey-color, 800);
+  border-radius: 8px;
+  flex-grow: 1;
+  transition: all 0.2s ease;
+
+  &:focus-within {
+    background: palette(grey-color, 850);
+  }
+
+  input {
+    background-color: transparent;
+    border: none !important;
+    outline: none !important;
+    @include font(base, 22, 400);
+    padding: 11px 0;
+    color: palette(grey-color, 100);
+    width: 100%;
+
+    @include mq(992) {
+      padding: 16px 0;
+    }
+
+    &::placeholder {
+      color: #ADADAD;
+    }
+  }
+}
+
+.c-follow-form__icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  @include font(base, 25, 400);
+  color: #ADADAD;
+} 

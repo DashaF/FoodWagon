@@ -1,0 +1,59 @@
+.c-slider-arrows {
+  .slick-arrow {
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: palette(primary);
+    border: 1px solid #FAAA01;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+
+    @include mq(992) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include mq(1528) {
+      width: 76px;
+      height: 76px;
+    }
+
+    &:before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      color: palette(grey-color, 50);
+      @include font(base, 18, 900);
+
+      @include mq(992) {
+        @include font(xxmd, 28, 900);
+      }
+
+      @include mq(1528) {
+        @include font(xmd, 35, 900);
+      }
+    }
+
+    &:hover {
+      background-color: #f4a700;
+      border: 1px solid rgba(249,164,5,0.7);
+    }
+  }
+
+  .slick-prev {
+    &:before {       
+      content: "\f053";
+    }
+  }
+
+  .slick-next {
+    &:before {       
+      content: "\f054";
+    }
+  }
+}

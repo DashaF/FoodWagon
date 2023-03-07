@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Config settings
+   ========================================================================== */
+
+// Predefined breakpoint
+$xxl : 1400;
+$xl : 1200;
+$lg : 992;
+$md : 768;
+$sm : 576;
+
+
+// main container mixin
+$bs-gut: calc(3rem * .5);
+@mixin make-container($padding-x: $bs-gut) {
+  width: 100%;
+  max-width: calc(1480px + 3rem);
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// main container
+.custom-container {
+  @include make-container();
+}

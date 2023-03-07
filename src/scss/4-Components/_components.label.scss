@@ -1,0 +1,42 @@
+.c-label {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 5px 12px;
+  @include font(xsm, 20, 700);
+  margin: 0 8px 8px 0;
+
+  @include mq(1528) {
+    padding: 8px 16px;
+    @include font(base, 26, 700);
+  }
+
+  span {
+    display: inline-block;
+    @include font(base, 22, 900);
+    margin-right: 10px;
+
+    @include mq(1528) {
+      @include font(base, 26, 900);
+    }
+  }
+}
+
+.c-label--warning {
+  background: rgba(241, 114, 40, 0.2);
+  color: palette(secondary);
+}
+
+.c-label--success {
+  background: rgba(121, 185, 60, 0.2);
+  color: palette(success);
+}
+
+.c-label--primary {
+  background: palette(primary);
+  color: palette(grey-color, 50);
+}
+
+.c-label--secondary {
+  background: palette(secondary);
+  color: palette(grey-color, 50);
+}

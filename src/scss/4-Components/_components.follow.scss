@@ -1,0 +1,77 @@
+.c-follow {
+  margin-top: 15px;
+
+  @include mq(768) {
+    width: 485px;
+    margin-top: 50px;
+  }
+
+  @include mq(992) {
+    margin-top: 90px;
+  }
+
+  @include mq(1200) {
+    margin-top: 0;
+  }
+}
+
+.c-follow__title {
+  @include font(base, 22, 700);
+  color: rgba(245, 245, 245, 0.6);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.c-follow__soc-menu {
+  color: rgba(245, 245, 245, 0.6);
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      margin-right: 16px;
+      font-size: 24px;
+
+      a {
+        display: inline-block;
+        color: rgba(245, 245, 245, 0.6);
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: rgba(245, 245, 245, 1);
+        }
+      }
+    }
+  }
+}
+
+.c-follow__text {
+  margin: 25px 0;
+  @include font(xsm, 25, 700);
+  @include font-family(secondary);
+  color: #BBBBBB;
+
+  @include mq(1200) {
+    margin: 40px 0;
+    @include font(base, 25, 700);
+  }
+}
+
+.c-follow__form {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(500) {
+    flex-direction: row;
+  }
+}
+
+.c-follow__button {
+  margin: 25px 0 0 0;
+
+  @include mq(500) {
+    margin: 0 0 0 16px;
+  }
+}
+

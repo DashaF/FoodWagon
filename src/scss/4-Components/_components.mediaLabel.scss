@@ -1,0 +1,43 @@
+.c-media-label {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  z-index: 1;
+  padding: 7px 12px;
+  color: palette(grey-color, 50);
+  background: palette(primary);
+  border-radius: 0px 32px 0 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @include mq(768) {
+    padding: 10px 13px 10px 18px;
+    min-width: 140px;
+  }
+}
+
+.c-media-label__price {
+  @include font(lg, 57, 700);
+
+  @include mq(768) {
+    @include font(xl, 72, 700);
+  }
+}
+
+.c-media-label__percent {
+  @include font(xxmd, 26, 700);
+
+  @include mq(768) {
+    @include font(xmd, 42, 700);
+  }
+}
+
+.c-media-label__text {
+  @include font(base, 21, 400);
+
+  @include mq(768) {
+    @include font(xxmd, 26, 400);
+  }
+}

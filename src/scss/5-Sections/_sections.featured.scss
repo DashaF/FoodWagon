@@ -1,0 +1,21 @@
+.s-featured {
+  padding: 20px 0 50px;
+
+  @include mq(768) {
+    padding: 20px 0 80px;
+  }
+}
+
+.s-featured__title {
+  text-align: center;
+  margin-bottom: 20px;
+
+  @include mq(768) {
+    margin-bottom: 45px;
+  }
+}
+
+.s-featured__btn {
+  text-align: center;
+  padding-top: 20px;
+}

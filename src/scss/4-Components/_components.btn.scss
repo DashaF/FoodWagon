@@ -1,0 +1,91 @@
+.c-btn {
+  display: inline-block;
+  border-radius: 8px;
+  @include font(xsm, 24, 700);
+  text-align: center;
+  border: none;
+  transition: all 0.4s ease-out;
+  padding: 10px 25px;
+
+  @include mq(992) {
+    @include font(base, 24, 700);
+    padding: 15px 35px;
+  }
+}
+
+.c-btn__icon {
+  display: inline-block;
+  @include font(sm, 24, 700);
+  transition: all 0.45s ease;
+
+  .c-btn__text + & {
+    margin-left: 10px;
+    transform: translateX(0);
+    
+  }
+
+  .c-btn:hover .c-btn__text + & {
+    transform: translateX(10px);
+  }
+}
+
+.c-btn__text {
+  display: inline-block;
+  
+  .c-btn__icon + & {
+    margin-left: 10px;
+  }
+}
+
+.c-btn--gradient {
+  color: palette(grey-color, 50);
+  background-size: 300% 100%;
+
+  &:hover {
+    color: palette(grey-color, 50);
+    background-position: 100% 0;
+  }
+}
+
+.c-btn--primary-gradient {
+  @extend .c-btn--gradient;
+  background-image: linear-gradient(95.71deg, #FF7A7A, #F75900, #FF7A7A, #F75900);
+
+}
+
+.c-btn--secondary-gradient {
+  @extend .c-btn--gradient;
+  background-image: linear-gradient(97.86deg, #FFBA26, #FF9A0E, #FFBA26, #FF9A0E);
+}
+
+.c-btn--secondary {
+  background-color: palette(secondary);
+  color: palette(grey-color, 50);
+
+  &:hover {
+    color: palette(grey-color, 50);
+    background-color: #c05b20;
+  }
+
+  .c-card & {
+    width: 100%;
+  }
+}
+
+.c-btn--white {
+  @include font(base, 24, 700);
+  color: palette(secondary);
+  padding: 10px 24px;
+  box-shadow: 0px 1px 5px 0px rgba(255,179,14,0.45);
+
+  .c-btn__icon,
+  .c-btn__text {
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &:hover {
+    box-shadow: 0px 2px 7px 0px rgba(255,179,14,0.9);
+  }
+}

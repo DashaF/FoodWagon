@@ -1,0 +1,29 @@
+.c-order-tab {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  @include font(xsm, 16, 700);
+  color: palette(grey-color, 600);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+
+  @include mq(768) {
+    padding: 10px 24px;
+    @include font(base, 18, 700);
+  }
+
+  &:hover {
+    background-color: palette(grey-color, 200);
+  }
+
+  &.active {
+    color: palette(secondary);
+    background: rgba(241, 114, 40, 0.1);
+  }
+
+  span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}

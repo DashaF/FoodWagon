@@ -1,0 +1,43 @@
+.c-icon-block {
+  max-width: 275px;
+  margin: 0 auto 50px;
+
+  @include mq(768) {
+    margin: 0 auto 70px;
+  }
+
+  @include mq(992) {
+    margin: 0 auto;
+  }
+}
+
+.c-icon-block__img {
+  text-align: center;
+
+  svg {
+    display: inline-block;
+    height: 80px;
+    width: auto;
+    filter: drop-shadow(0px 3px 7px rgba(255, 174, 0, 0.26)) drop-shadow(0px 14px 27px rgba(255, 174, 0, 0.29));
+  
+    @include mq(768) {
+      height: 112px;
+      filter: drop-shadow(0px 5px 10px rgba(255, 174, 0, 0.26)) drop-shadow(0px 20px 40px rgba(255, 174, 0, 0.29));
+    }
+  }
+}
+
+.c-icon-block__title {
+  margin: 20px 0 10px;
+  @include font(xxmd, 26, 700);
+  color: palette(grey-color, 800);
+
+   @include mq(768) {
+    margin: 40px 0 10px;
+   }
+}
+
+.c-icon-block__description {
+  @include font(base, 25, 400);
+  color: palette(grey-color);
+}

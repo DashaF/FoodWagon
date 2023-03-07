@@ -1,0 +1,11 @@
+.s-details {
+  padding: 80px 0 0;
+
+  @include mq(992) {
+    padding: 85px 0 35px;
+  }
+
+  @include mq(1200) {
+    padding: 100px 0 35px;
+  }
+}

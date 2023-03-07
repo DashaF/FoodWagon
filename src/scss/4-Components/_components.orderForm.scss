@@ -1,0 +1,60 @@
+.c-order-form {
+  flex-grow: 1;
+  width: 100%;
+  padding: 0 0 0 24px;
+  position: relative;
+
+  @include mq(530) {
+    width: auto;
+  }
+
+  @include mq(768) {
+    padding: 0 0 0 46px;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    padding: 12px 5px;
+    color: palette(grey-color, 850);
+    @include font(xsm, 24, 400);
+    @include font-family(base);
+
+    @include mq(992) {
+      padding: 18px 11px;
+      @include font(base, 25, 400);
+    }
+
+    &::placeholder {
+      @include font(xsm, 24, 400);
+      @include font-family(secondary);
+      color: palette(grey-color, 850);
+      transition: all 0.2s ease-out;
+
+      @include mq(992) {
+        @include font(base, 25, 400);
+      }
+    }
+
+    &:focus-visible {
+      outline: none;
+
+      &::placeholder {
+        color: palette(grey-color, 400);
+      }
+    }
+  }
+}
+
+.c-order-form__icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FF7474;
+  font-size: 24px;
+
+  @include mq(768) {
+    left: 16px;
+  }
+}

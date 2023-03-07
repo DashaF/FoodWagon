@@ -1,0 +1,116 @@
+.c-detail {
+  border-radius: 16px;
+  box-shadow: 0px 14px 15px rgba(124, 124, 124, 0.06), 0px 27px 42px rgba(124, 124, 124, 0.28);
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: hidden;
+  margin-bottom: 55px;
+
+  @include mq(768) {
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+
+  @include mq(1200) {
+    margin-bottom: 80px;
+    height: 512px;
+    box-shadow: 0px 14px 15px rgba(124, 124, 124, 0.06), 0px 27px 82px rgba(124, 124, 124, 0.28);
+  }
+}
+
+.c-detail--reverse {
+
+  @include mq(768) {
+    flex-direction: row-reverse;
+  }
+}
+
+.c-detail__wrap {
+  padding: 25px 25px 124px;
+  position: relative;  
+
+  @include mq(768) {
+    padding: 40px 25px 124px;
+    width: 35%;
+  }
+
+  @include mq(922) {
+    padding: 50px 35px 144px;
+  }
+
+  @include mq(1200) {
+    padding: 56px 56px 164px;
+  }
+}
+
+.c-detail__info {  
+  @include mq(768) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+.c-detail__title {
+  @include font(xmd, 40, 700);
+  color: palette(grey-color, 800);
+  margin-bottom: 10px;
+
+  @include mq(992) {
+    @include font(md, 48, 700);
+    margin-bottom: 20px;
+  }
+
+  span {
+    color: palette(primary);
+  }
+}
+
+.c-detail__description {
+  @include font(xsm, 22, 400);
+  @include font-family(secondary);
+  color: rgba(97, 97, 97, 0.69);
+
+  @include mq(992) {
+    @include font(base, 25, 400);
+  }
+}
+
+.c-detail__btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 35px;
+  padding: 0 25px;
+
+  @include mq(922) {
+    bottom: 46px;
+    padding: 0 35px;
+  }
+
+  @include mq(1200) {
+    bottom: 56px;
+    padding: 0 56px;
+  }
+
+  .c-btn {
+    width: 100%;
+  }
+}
+
+.c-detail__img {
+  @include mq(768) {
+    width: 65%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  img {
+    object-fit: cover;
+
+    @include mq(768) {
+      display: none;
+    }
+  }
+}
